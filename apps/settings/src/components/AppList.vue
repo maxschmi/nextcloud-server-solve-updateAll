@@ -325,7 +325,7 @@ export default {
 			this.apps
 				.filter(app => app.update)
 				.map((app) => limit(() => {
-					this.update(app.id)
+					app.update(app.id)
 				}))
 		},
 	},
